@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="image-container">
+        <img src="assets/images/pxfuel.jpg" width="1072px" height="618px" alt="">
+    </div>
+    <div class="login-container" >
+        <h1>Login</h1>
+        <form (ngSubmit)="login()">
+            <input type="text" placeholder="Username" [(ngModel)]="userid" [ngModelOptions]="{standalone: true}">
+            <input type="password" placeholder="Password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}">
+            <button type="submit" (click)="login()">Login</button>
+        </form>
+    </div>
+</div>

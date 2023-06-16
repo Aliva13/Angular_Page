@@ -5,7 +5,9 @@
   "projects": {
     "Angular_Page": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "skiptests":true
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -94,5 +96,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "ff0d643d-4d2b-48dc-9b33-7e7159e491de"
   }
 }

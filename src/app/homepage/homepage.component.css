@@ -1,0 +1,69 @@
+.side-popup {
+    position: absolute;
+    top: 54%;
+    left: 13%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    max-width: 90%;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    
+  }
+  
+  .side-popup h3 {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+  
+  .side-popup form {
+    padding-top: 20px;
+    display: grid;
+    gap: 10px;
+  }
+  
+  .side-popup .form-group {
+    display: grid;
+    gap: 4px;
+  }
+  
+  .side-popup label {
+    font-weight: bold;
+  }
+  
+  .side-popup input[type="text"],
+  .side-popup input[type="number"],
+  .side-popup input[type="month"],
+  .side-popup select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .side-popup input[type="file"] {
+    padding: 4px;
+  }
+  
+  .side-popup .submit-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .side-popup .submit-button:hover {
+    background-color: #0056b3;
+  }
+  span{
+    padding-left: 180px;
+    cursor: pointer;
+  }
+    
