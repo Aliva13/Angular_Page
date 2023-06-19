@@ -1,11 +1,11 @@
-<tbody>
-    <tr *ngFor="let item of allData">
-        <td>{{item.name}}</td>
-        <td>{{item.empid}}</td>
-        <td>{{item.contact}}</td>
-        <td>{{item.joiningyear}}</td>
-        <td>{{item.gender}}</td>
-        <td>{{item.state}}</td>
-        <td>{{item.profileimg}}</td>
-    </tr>
-</tbody>
+<div class="chart-container">
+    <div class="w-70 h-100" id="uniqueId" echarts [options]="chartOptions" [autoResize]="true" class="chartstyle" ></div>
+</div>
+
+<div class="dropdown">
+    <button class="dropbtn">Dropdown</button>
+    <div class="dropdown-content">
+        <a (click)="updateChartByGender()">Gender</a>
+        <a (click)="updateChartByState()">State</a>
+    </div>
+</div>

@@ -10,6 +10,8 @@ import { DetailsComponent } from './details/details.component';
 import { FormsModule } from '@angular/forms';
 import { CardComponent } from './card/card.component';
 import { GraphComponent } from './graph/graph.component';
+import { NgxEchartsModule } from 'ngx-echarts';
+import * as echarts from 'echarts';
 
 @NgModule({
   declarations: [
@@ -20,12 +22,14 @@ import { GraphComponent } from './graph/graph.component';
     DetailsComponent,
     CardComponent,
     GraphComponent,
-    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    NgxEchartsModule.forRoot({
+      echarts,
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent],
