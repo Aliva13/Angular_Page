@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-homepage',
@@ -7,13 +8,15 @@ import { Component } from '@angular/core';
 })
 export class HomepageComponent {
   public isSidePopupOpen= true;
+  public showProfilePopup=true;
+  yourName: string = "Aliva";
   formData: any = {};
   public listData: any = [];
   nameError: string = '';
   public activepage: string = 'detail';
   maleProfileImage: string = "assets/images/man.PNG";
   femaleProfileImage: string = "assets/images/women.PNG"
-  constructor() { }
+  constructor(private router: Router) { }
 
 
   getEventData(event: any) {
@@ -47,5 +50,11 @@ export class HomepageComponent {
   closeForm()
   {
     this.isSidePopupOpen=false;
+  }
+  profilegetData(event:any){
+    this.showProfilePopup = event;
+  }
+  logout(){
+    this.router.navigate(['/login']);
   }
 }

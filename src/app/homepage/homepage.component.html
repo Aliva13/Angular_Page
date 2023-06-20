@@ -1,4 +1,4 @@
-<app-navbar (newItemEvent)="getEventData($event)" (buttonEvent)="activeType($event)"></app-navbar>
+<app-navbar (newItemEvent)="getEventData($event)" (buttonEvent)="activeType($event)" (profileEvent)="profilegetData($event)"></app-navbar>
 <div class="side-popup" *ngIf="isSidePopupOpen">
     <h3>Edit Profile <span (click)="closeForm()">❎</span></h3>
     <form>
@@ -34,6 +34,10 @@
         <button class="submit-button" (click)="submitForm()" routerLink="/Details"
             routerLinkActive="active">Submit</button>
     </form>
+</div>
+<div class="profile-popup" *ngIf="showProfilePopup">
+    <h2>Welcome, {{yourName}} !!</h2><br>
+    <button class="logout-button" (click)="logout()">Logout</button>
 </div>
 <app-details [allData]="listData" *ngIf="activepage==='detail'" ></app-details>
 <app-card [allData]="listData" *ngIf="activepage==='card'" ></app-card>

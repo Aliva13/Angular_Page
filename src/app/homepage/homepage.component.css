@@ -5,9 +5,11 @@
     transform: translate(-50%, -50%);
     width: 300px;
     max-width: 90%;
-    background-color: #fff;
+    background-color: #e3e0e6;
     border-radius: 8px;
-    padding: 20px;
+    padding-bottom: 20px;
+    padding-right: 27px;
+    padding-left: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     
   }
@@ -48,9 +50,10 @@
   
   .side-popup .submit-button {
     display: block;
-    width: 100%;
+    width: 50%;
     padding: 10px;
-    background-color: #007bff;
+    margin-left: 70px;
+    background-color: #2677ce;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -66,4 +69,41 @@
     padding-left: 180px;
     cursor: pointer;
   }
+
+  .profile-popup {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: #2c035c;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-right: -10px;
+    z-index: 10;
+    color: aliceblue;
+  }
+  
+  .profile-popup h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 20%;
+  }
+  
+  .logout-button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 70px;
+  }
+  
+  .logout-button:hover {
+    background-color: #c82333;
+  }
+  
     

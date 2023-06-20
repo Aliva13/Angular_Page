@@ -5,11 +5,12 @@
         <span></span>
     </div>
     <div class="navbar-items">
-        <button class="navbar-button" (click)="buttonClickEvent('detail')" >Details</button>
-        <button class="navbar-button" (click)="buttonClickEvent('card')" >Card</button>
+        <button class="navbar-button" (click)="buttonClickEvent('detail')">Details</button>
+        <button class="navbar-button" (click)="buttonClickEvent('card')">Card</button>
         <button class="navbar-button" (click)="buttonClickEvent('graph')">Graph</button>
     </div>
-    <div class="profile-icon"><img src="assets/images/profile.png" alt="Profile Icon"></div>
+    <div class="profile-icon" (click)="openProfilePopup()">
+        <img src="assets/images/profile.png" alt="Profile Icon">    
+    </div>
 </nav>
-
 

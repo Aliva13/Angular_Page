@@ -7,21 +7,21 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class NavbarComponent {
   isSidePopupOpen: boolean = false;
+  showProfilePopup: boolean = false;
   @Output() newItemEvent = new EventEmitter();
   @Output() buttonEvent = new EventEmitter();
+  @Output() profileEvent = new EventEmitter();
 
   toggleSidePopup() {
     this.isSidePopupOpen = !this.isSidePopupOpen;
     this.newItemEvent.emit(this.isSidePopupOpen);
   }
-  // onClickDetails() {
-  //   this.showDetails.emit();
-  // }
-  // onClickCard() {
-  //   alert("button clicked");
-  //   this.showCard.emit();
-  // }
   buttonClickEvent(type: any) {
     this.buttonEvent.emit(type);
+  }
+
+  openProfilePopup() {
+    this.showProfilePopup = !this.showProfilePopup;
+    this.profileEvent.emit(this.showProfilePopup);
   }
 }
